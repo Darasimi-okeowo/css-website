@@ -1,22 +1,20 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { IoLogoPlaystation } from 'react-icons/io'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className='header'>
+        <div className='logo-box'>
+          <IoLogoPlaystation className='logo'/> 
+        </div>
+        <div className='text-box'>
+          <h1 className='heading-primary'>
+            <span className='heading-primary-main'>PlayStation</span>
+            <span className='heading-primary-sub'>is where you cool your mind</span>
+          </h1>
+        </div>
       </header>
     </div>
   );
