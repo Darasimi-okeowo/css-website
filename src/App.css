@@ -26,6 +26,7 @@
 }
 .logo{
     font-size: 80px;
+    color: white;
 }
 .text-box{
     position: absolute;
@@ -99,6 +100,7 @@
     border-radius: 100px;
     cursor: pointer;
     transition: all .2s;
+    outline-style: none;
 }
 
 .btn:hover{
@@ -114,4 +116,21 @@
 .btn-white{
     background-color: #fff;
     color: #777;
+}
+
+@keyframes moveTotop {
+    0%{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.btn-animated{
+    animation-name: moveTotop;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
 }
