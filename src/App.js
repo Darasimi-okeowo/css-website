@@ -14,8 +14,9 @@ function App() {
             <span className='heading-primary-main'>PlayStation</span>
             <span className='heading-primary-sub'>is where you cool your mind</span>
           </h1>
+            <button className='btn btn-white'>Discover our games</button>
         </div>
-      </header>
+      </header> 
     </div>
   );
 }
